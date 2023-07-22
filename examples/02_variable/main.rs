@@ -1,11 +1,11 @@
 fn main() {
-    let mut x:f32 = 32.0;
+    let mut x: f32 = 32.0;
 
-    println!(" x value {}",x);
+    println!(" x value {}", x);
 
     x = 34.0;
 
-    println!(" x value {}",x);
+    println!(" x value {}", x);
 
     println!("i8  min: {}, max  {}", i8::MIN, i8::MAX);
     println!("i16 min: {}, max  {}", i16::MIN, i16::MAX);
@@ -16,19 +16,14 @@ fn main() {
     println!("u32 min: {}, max  {}", u32::MIN, u32::MAX);
     println!("u64 min: {}, max  {}", u64::MIN, u64::MAX);
 
-
     println!("f32 min: {}, max  {}", f32::MIN, f32::MAX);
     println!("f64 min: {}, max  {}", f64::MIN, f64::MAX);
 
-    println!(
-        "status {:?}",(true, 32.4, 344)
-    );
+    println!("status {:?}", (true, 32.4, 344));
 
     let mut x1 = 40;
     let x2;
     x1 = x1 * 3;
-    x2 = x1-2;
-    println!("My age is {} and my son age is {}", x1,x2);
-
-
+    x2 = x1 - 2;
+    println!("My age is {} and my son age is {}", x1, x2);
 }

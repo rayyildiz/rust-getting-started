@@ -5,7 +5,6 @@ fn main() {
     //     sleep(ten_millis)
     // }
 
-
     let mut exit = true;
     let guess = 32;
 
@@ -13,18 +12,16 @@ fn main() {
     while exit {
         let mut number = String::new();
 
-        std::io::stdin().read_line(&mut number)
+        std::io::stdin()
+            .read_line(&mut number)
             .expect("failed to get number");
 
-
-        let n :i32 = number.trim().parse().expect("failed to parse");
+        let n: i32 = number.trim().parse().expect("failed to parse");
         if n == guess {
             exit = false;
             println!("congrats, program will exit");
-        }else {
+        } else {
             println!("wrong, enter again");
         }
-
     }
-
 }

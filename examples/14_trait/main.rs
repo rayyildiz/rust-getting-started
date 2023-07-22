@@ -1,5 +1,5 @@
 fn main() {
-    let p = Person{
+    let p = Person {
         first_name: "Ali".to_string(),
         last_name: "B".to_string(),
         country: "TR".to_string(),
@@ -13,43 +13,37 @@ fn main() {
         grade: "A".to_string(),
     };
 
+    println!("person: {}", p.info());
+    println!("student: {}", s.info());
 
-    println!("person: {}",p.info());
-    println!("student: {}",s.info());
-
-
-    let c = Circle{
-        rad:3.2,
-    };
+    let c = Circle { rad: 3.2 };
 
     let r = Rectangle {
-      height:32.0,
-        width:32.0,
+        height: 32.0,
+        width: 32.0,
     };
 
-    println!("circle {}",c.area());
-
+    println!("circle {}", c.area());
 }
 
-
 struct Person {
-    first_name:String,
+    first_name: String,
     last_name: String,
-    country:String,
-    salary:i64,
+    country: String,
+    salary: i64,
 }
 
 struct Student {
-    first_name:String,
+    first_name: String,
     last_name: String,
-    country:String,
-    grade:String,
+    country: String,
+    grade: String,
 }
 
 trait GeneralInformer {
-    fn info(&self)->&str;
+    fn info(&self) -> &str;
 
-    fn country(&self)->&str;
+    fn country(&self) -> &str;
 }
 
 impl GeneralInformer for Person {
@@ -72,27 +66,21 @@ impl GeneralInformer for Student {
     }
 }
 
-
 struct Circle {
-    rad:f32,
+    rad: f32,
 }
 
 struct Rectangle {
-    width:f32,
-    height:f32,
+    width: f32,
+    height: f32,
 }
 
 trait Calculator {
-    fn area(&self)->f32 {
-
+    fn area(&self) -> f32 {
         0.0
     }
 }
 
-impl Calculator for Circle {
+impl Calculator for Circle {}
 
-}
-
-impl Calculator for Rectangle {
-
-}
+impl Calculator for Rectangle {}

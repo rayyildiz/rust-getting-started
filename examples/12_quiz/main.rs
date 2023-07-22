@@ -12,9 +12,8 @@ fn main() {
     let s3 = &s2;
     let s4 = &s3;
 
-    println!("{}",s4);
+    println!("{}", s4);
 
     let a = ***s4 == "Hello".to_string();
-    println!("aa: {}",a);
-
+    println!("aa: {}", a);
 }
