@@ -54,7 +54,7 @@ jobs:
     - run: cargo run --package rust-intro --example 21_closure
     - run: cargo run --package rust-intro --example 22_functypes
     - run: cargo run --package rust-intro --example 23_iterators
-    #- run: cargo run --package rust-intro --example
+    - run: cargo run --package rust-intro --example 24_module
     #- run: cargo run --package rust-intro --example
     #- run: cargo run --package rust-intro --example
     #- run: cargo run --package rust-intro --example
