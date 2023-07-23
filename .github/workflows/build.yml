@@ -36,11 +36,11 @@ jobs:
     - run: cargo run --package rust-intro --example 03_compand
     - run: cargo run --package rust-intro --example 04_array-tuple
     - run: cargo run --package rust-intro --example 05_vector
-    - run: cargo run --package rust-intro --example 06_functions
+    # - run: cargo run --package rust-intro --example 06_functions # stdin
     - run: cargo run --package rust-intro --example 07_ownership
     - run: cargo run --package rust-intro --example 08_immutab_ref
     - run: cargo run --package rust-intro --example 09_condition
-    - run: cargo run --package rust-intro --example 10_loop
+    # - run: cargo run --package rust-intro --example 10_loop  # stdin
     - run: cargo run --package rust-intro --example 11_forloop
     - run: cargo run --package rust-intro --example 12_quiz
     - run: cargo run --package rust-intro --example 13_struct
