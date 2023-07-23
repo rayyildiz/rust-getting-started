@@ -15,7 +15,13 @@ fn main() {
     println!("div2: {}", ops::divide(10.0, 4.0));
 
     println!("operations --- command");
-    println!("ops add {}",ops::command(ops::Operation::Add,3,4));
-    println!("ops div {}",ops::command(ops::Operation::Divide,39.2,4.1));
-    println!("ops mul {}",ops::command(ops::Operation::Multiple,3.1,4.2));
+    println!("ops add {}", ops::command(ops::Operation::Add, 3, 4));
+    println!(
+        "ops div {}",
+        ops::command(ops::Operation::Divide, 39.2, 4.1)
+    );
+    println!(
+        "ops mul {}",
+        ops::command(ops::Operation::Multiple, 3.1, 4.2)
+    );
 }
