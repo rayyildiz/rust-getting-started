@@ -1,5 +1,5 @@
 fn main() {
-    let (_first, second) = (3, 4);
+    let (_first, second) = (3, 4.3);
     let large_number = 1_000_000;
 
     println!("number {number:x}", number = large_number);
