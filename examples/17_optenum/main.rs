@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let mut disase: Option<String> = None;
 
     disase = Some("test".to_string());

@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let s1 = "hello";
     let v: &str;
 

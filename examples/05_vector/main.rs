@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let mut v = vec![10, 12, 33, 4, 5, 6, 7];
     v.push(2);
     println!("vector {:?}", v);

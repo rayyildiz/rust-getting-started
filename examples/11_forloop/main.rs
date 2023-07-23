@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let mut v = vec![1, 42, 122, 41, 33, 122, 3];
 
     for i in 0..v.len() {

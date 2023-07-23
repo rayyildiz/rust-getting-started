@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     //let ten_millis = time::Duration::from_millis(100);
     // loop {
     //     print!(". ");

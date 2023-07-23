@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     println!("integer {}", square(4));
     println!("float {}", square(2.4));
 

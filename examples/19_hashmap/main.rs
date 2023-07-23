@@ -1,6 +1,9 @@
+use rust_intro;
 use std::collections::HashMap;
 
 fn main() {
+    rust_intro::print_banner();
+
     let mut map: HashMap<&str, Person> = HashMap::new();
 
     map.insert(

@@ -31,6 +31,7 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
 
+    - run: cargo run
     - run: cargo run --package rust-intro --example 01_intro
     - run: cargo run --package rust-intro --example 02_variable
     - run: cargo run --package rust-intro --example 03_compand

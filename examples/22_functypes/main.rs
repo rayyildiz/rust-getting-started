@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let f = max;
     println!("f :{}", f(2, 3));
 

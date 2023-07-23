@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let participant = Conveyance::Air;
 
     println!("car :{}", Conveyance::Car as i32);

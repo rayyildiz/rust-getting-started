@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let mut x: f32 = 32.0;
 
     println!(" x value {}", x);

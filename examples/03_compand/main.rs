@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let (_first, second) = (3, 4.3);
     let large_number = 1_000_000;
 

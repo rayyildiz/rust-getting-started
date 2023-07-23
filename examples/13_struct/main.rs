@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let ramazan = Person {
         first_name: String::from("Ramazan"),
         last_name: String::from("AYYILDIZ"),

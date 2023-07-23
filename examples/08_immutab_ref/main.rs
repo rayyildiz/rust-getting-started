@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let mut v = vec![1, 2, 3, 4];
     let ref1 = &v;
     let ref2 = &v;

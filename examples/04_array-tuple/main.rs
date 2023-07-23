@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let info = ("Ramazan", "AYYILDIZ", 41);
 
     println!("name :{}", info.0);

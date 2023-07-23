@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let a = sub_total(2, 4);
     println!("result : {}", a);
 

@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     println!("ok {:?}", divide(4.3, 2.1));
     println!("err {:?}", divide(4.3, 0.0));
 

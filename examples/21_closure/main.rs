@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let x = 5;
 
     let square = |num: i32| println!("square: {}", num * num);

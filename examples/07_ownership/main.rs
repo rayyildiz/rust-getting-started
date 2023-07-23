@@ -1,6 +1,9 @@
+use rust_intro;
 use std::env::var;
 
 fn main() {
+    rust_intro::print_banner();
+
     let s1 = String::from("hello");
     {
         let s2 = &s1;

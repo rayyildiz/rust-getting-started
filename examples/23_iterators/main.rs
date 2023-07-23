@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let v = vec![1, 2, 3, 4];
     let mut it = v.iter();
 
@@ -34,12 +38,14 @@ fn main() {
     let evens = v.iter().filter(|&a| *a % 2 == 0).collect::<Vec<&i32>>();
     println!(" [{:?}] evens {:?}", v, evens);
 
-
     let v2 = v.clone();
-    let evens2 = v2.clone().into_iter().filter(|&a| a % 2 == 0).collect::<Vec<i32>>();
-    println!(" [{:?}] evens {:?}",v2, evens2);
-
+    let evens2 = v2
+        .clone()
+        .into_iter()
+        .filter(|&a| a % 2 == 0)
+        .collect::<Vec<i32>>();
+    println!(" [{:?}] evens {:?}", v2, evens2);
 
     let m = v.iter().map(|a| 1.18 * *a as f32).collect::<Vec<f32>>();
-    println!(" [{:?}] new map {:?}",v, m);
+    println!(" [{:?}] new map {:?}", v, m);
 }

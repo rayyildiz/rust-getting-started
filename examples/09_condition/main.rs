@@ -1,4 +1,8 @@
+use rust_intro;
+
 fn main() {
+    rust_intro::print_banner();
+
     let a = 34;
 
     if a > 24 && a < 50 {
