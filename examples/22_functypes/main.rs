@@ -19,6 +19,13 @@ fn print_info(f: fn(i32, i32) -> i32, a: i32, b: i32) {
     println!("result {}", c);
 }
 
+/// max result
+/// # Tests
+/// ```
+/// let m = max(20,4);
+///
+/// assert_eq!(20,m);
+/// ```
 fn max(a: i32, b: i32) -> i32 {
     if a > b {
         a

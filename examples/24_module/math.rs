@@ -23,6 +23,14 @@ pub mod math {
             result
         }
 
+        /// Multiple given a text
+        ///
+        /// # Tests
+        /// ```
+        /// let result = math::math::ops::multiple(3,4);
+        ///
+        /// assert_eq!(result,12);
+        /// ```
         pub fn multiple<T>(a: T, b: T) -> T
         where
             T: std::ops::Mul<Output = T> + Copy,
