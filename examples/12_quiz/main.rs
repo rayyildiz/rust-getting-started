@@ -1,7 +1,7 @@
-use rust_intro;
+use rust_intro::banner::print_banner;
 
 fn main() {
-    rust_intro::print_banner();
+    print_banner();
 
     let x: u64 = 4_294_967_296;
     let y = x as u32;

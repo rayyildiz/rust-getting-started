@@ -1,8 +1,8 @@
-use rust_intro;
+use rust_intro::banner::print_banner;
 use std::collections::HashMap;
 
 fn main() {
-    rust_intro::print_banner();
+    print_banner();
 
     let mut map: HashMap<&str, Person> = HashMap::new();
 

@@ -1,7 +1,7 @@
-use rust_intro;
+use rust_intro::banner::print_banner;
 
 fn main() {
-    rust_intro::print_banner();
+    print_banner();
 
     let mut v = vec![10, 12, 33, 4, 5, 6, 7];
     v.push(2);

@@ -1,5 +1,5 @@
-use rust_intro;
+use rust_intro::banner::print_banner;
 
 fn main() {
-    rust_intro::print_banner();
+    print_banner();
 }
