@@ -21,9 +21,10 @@ fn main() {
             .expect("failed to get number");
 
         let n: i32 = number.trim().parse().expect("failed to parse");
+        println!("you entered: {}",n);
         if n == guess {
             exit = false;
-            println!("congrats, program will exit");
+            println!("congrats, {} is correct answer.  program will exit",n);
         } else {
             println!("wrong, enter again");
         }

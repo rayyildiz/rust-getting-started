@@ -17,5 +17,4 @@ fn main() {
     println!("3. count of a: {}", Rc::strong_count(&a));
     let c = Rc::new(Cons(5, Rc::clone(&a)));
     println!("4. count of a: {}", Rc::strong_count(&a));
-
 }
