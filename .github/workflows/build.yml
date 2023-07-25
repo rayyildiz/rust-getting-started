@@ -58,6 +58,18 @@ jobs:
     - run: cargo run --package rust-intro --example 24_module
     - run: cargo run --package rust-intro --example 25_smartpointer
     - run: cargo run --package rust-intro --example 26_singlylist
+    - run: cargo run --package rust-intro --example 27_refcounting
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
+    #- run: cargo run --package rust-intro --example
     #- run: cargo run --package rust-intro --example
     #- run: cargo run --package rust-intro --example
     #- run: cargo run --package rust-intro --example

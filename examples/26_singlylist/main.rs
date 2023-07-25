@@ -116,4 +116,15 @@ fn main() {
         "empty peek : {:?}",
         LinkedList::<i32>::create_empty().peek()
     );
+
+    let mut tuple_list = LinkedList::create_empty();
+    println!("tuple list :{:?}", tuple_list);
+    tuple_list.insert((32, "Name"));
+    tuple_list.insert((12, "User"));
+    tuple_list.insert((33, "Second name"));
+
+    println!("tuple list :{:?}", tuple_list);
+    println!("tuple peek :{:?}", tuple_list.peek().unwrap());
+
+    tuple_list.print();
 }
