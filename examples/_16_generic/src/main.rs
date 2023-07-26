@@ -11,7 +11,7 @@ fn main() {
     println!("int {:?}", Point { x: 3, y: 4 });
     println!("float {:?}", p);
 
-    p.print()
+    p.print();
 }
 
 fn square<T>(n: T) -> T
