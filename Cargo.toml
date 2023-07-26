@@ -1,21 +1,24 @@
-[package]
-name = "rust-intro"
-version = "0.1.0"
-edition = "2021"
-authors = ["Ramazan AYYILDIZ <ramazan@ayyildiz.rs>"]
-description ="Introduction to Rust"
-readme = "README.md"
-homepage = "https://ayyildiz.rs"
-repository = "https://github.com/rayyildiz/rust-getting-started"
-license-file = "LICENSE"
-keywords = ["rust", "examples","getting-started"]
-include = ["/src", "/examples", "!/examples/big_example"]
-publish = false
+#[package]
+#name = "rust-intro"
+#version = "0.1.0"
+#edition = "2021"
+#authors = ["Ramazan AYYILDIZ <ramazan@ayyildiz.rs>"]
+#description ="Introduction to Rust"
+#readme = "README.md"
+#homepage = "https://ayyildiz.rs"
+#repository = "https://github.com/rayyildiz/rust-getting-started"
+#license-file = "LICENSE"
+#keywords = ["rust", "examples","getting-started"]
+#include = ["/src", "/examples", "!/examples/big_example"]
+#publish = false
+
+[workspace]
+members = [
+    "examples/*"
+]
 
 
-[dependencies]
-
-[profile.release]
+#[profile.release]
 # strip = true
 # opt-level = "s"
 # lto = true

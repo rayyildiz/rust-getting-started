@@ -3,5 +3,208 @@
 version = 3
 
 [[package]]
-name = "rust-intro"
+name = "_01_intro"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_02_variable"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_03_compand"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_04_array-tuple"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_05_vector"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_06_functions"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_07_ownership"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_08_immutab_ref"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_09_condition"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_10_loop"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_11_forloop"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_12_quiz"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_13_struct"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_14_trait"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_15_enum"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_16_generic"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_17_optenum"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_18_result"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_19_hashmap"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_20_lifetime"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_21_closure"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_22_functypes"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_23_iterators"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_24_module"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_25_smartpointer"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_26_singlylist"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_27_refcounting"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_28_refcell"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_29_doublelinked"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "banner"
 version = "0.1.0"
