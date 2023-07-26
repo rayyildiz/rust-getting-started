@@ -1,5 +1,5 @@
-use std::fmt::Debug;
 use banner::print_banner;
+use std::fmt::Debug;
 
 type PtrNode<T> = Option<Box<Node<T>>>;
 

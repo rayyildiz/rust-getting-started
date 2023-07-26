@@ -1,6 +1,6 @@
+use banner::print_banner;
 use std::cell::RefCell;
 use std::rc::Rc;
-use banner::print_banner;
 
 fn main() {
     print_banner();

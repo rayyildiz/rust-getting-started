@@ -53,9 +53,9 @@ impl LinkedList {
     }
 }
 
+use banner::print_banner;
 use std::ops::Deref;
 use std::ops::Drop;
-use banner::print_banner;
 
 impl Deref for LinkedList {
     type Target = i32;

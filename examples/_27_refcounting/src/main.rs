@@ -1,5 +1,5 @@
-use std::rc::Rc;
 use banner::print_banner;
+use std::rc::Rc;
 
 enum List {
     Cons(i32, Rc<List>),

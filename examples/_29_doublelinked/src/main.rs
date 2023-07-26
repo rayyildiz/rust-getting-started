@@ -1,6 +1,6 @@
+use banner::print_banner;
 use std::cell::RefCell;
 use std::rc::Rc;
-use banner::print_banner;
 
 struct Node<T> {
     element: T,
