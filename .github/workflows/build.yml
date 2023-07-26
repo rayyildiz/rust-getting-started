@@ -31,47 +31,46 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
 
-    - run: cargo run
-    - run: cargo run --package rust-intro --example 01_intro
-    - run: cargo run --package rust-intro --example 02_variable
-    - run: cargo run --package rust-intro --example 03_compand
-    - run: cargo run --package rust-intro --example 04_array-tuple
-    - run: cargo run --package rust-intro --example 05_vector
-    - run: echo "33" |  cargo run --package rust-intro --example 06_functions # stdin
-    - run: cargo run --package rust-intro --example 07_ownership
-    - run: cargo run --package rust-intro --example 08_immutab_ref
-    - run: cargo run --package rust-intro --example 09_condition
-    - run: echo "32" |  cargo run --package rust-intro --example 10_loop  # stdin
-    - run: cargo run --package rust-intro --example 11_forloop
-    - run: cargo run --package rust-intro --example 12_quiz
-    - run: cargo run --package rust-intro --example 13_struct
-    - run: cargo run --package rust-intro --example 14_trait
-    - run: cargo run --package rust-intro --example 15_enum
-    - run: cargo run --package rust-intro --example 16_generic
-    - run: cargo run --package rust-intro --example 17_optenum
-    - run: cargo run --package rust-intro --example 18_result
-    - run: cargo run --package rust-intro --example 19_hashmap
-    - run: cargo run --package rust-intro --example 20_lifetime
-    - run: cargo run --package rust-intro --example 21_closure
-    - run: cargo run --package rust-intro --example 22_functypes
-    - run: cargo run --package rust-intro --example 23_iterators
-    - run: cargo run --package rust-intro --example 24_module
-    - run: cargo run --package rust-intro --example 25_smartpointer
-    - run: cargo run --package rust-intro --example 26_singlylist
-    - run: cargo run --package rust-intro --example 27_refcounting
-    - run: cargo run --package rust-intro --example 28_refcell
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
-    #- run: cargo run --package rust-intro --example
+    - run: cargo run --package _01_intro
+    - run: cargo run --package _02_variable
+    - run: cargo run --package _03_compand
+    - run: cargo run --package _04_array-tuple
+    - run: cargo run --package _05_vector
+    - run: echo "33" |  cargo run --package _06_functions # stdin
+    - run: cargo run --package _07_ownership
+    - run: cargo run --package _08_immutab_ref
+    - run: cargo run --package _09_condition
+    - run: echo "32" |  cargo run --package _10_loop  # stdin
+    - run: cargo run --package _11_forloop
+    - run: cargo run --package _12_quiz
+    - run: cargo run --package _13_struct
+    - run: cargo run --package _14_trait
+    - run: cargo run --package _15_enum
+    - run: cargo run --package _16_generic
+    - run: cargo run --package _17_optenum
+    - run: cargo run --package _18_result
+    - run: cargo run --package _19_hashmap
+    - run: cargo run --package _20_lifetime
+    - run: cargo run --package _21_closure
+    - run: cargo run --package _22_functypes
+    - run: cargo run --package _23_iterators
+    - run: cargo run --package _24_module
+    - run: cargo run --package _25_smartpointer
+    - run: cargo run --package _26_singlylist
+    - run: cargo run --package _27_refcounting
+    - run: cargo run --package _28_refcell
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
+    #- run: cargo run --package _
