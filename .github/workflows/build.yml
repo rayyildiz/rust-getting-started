@@ -36,7 +36,7 @@ jobs:
     - run: cargo run --package _03_compand
     - run: cargo run --package _04_array-tuple
     - run: cargo run --package _05_vector
-    - run: echo "33" |  cargo run --package_06_functions # stdin
+    - run: echo "33" |  cargo run --package _06_functions # stdin
     - run: cargo run --package _07_ownership
     - run: cargo run --package _08_immutab_ref
     - run: cargo run --package _09_condition
