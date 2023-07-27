@@ -49,6 +49,9 @@ jobs:
       - run: cargo run --package _26_singlylist
       - run: cargo run --package _27_refcounting
       - run: cargo run --package _28_refcell
+      - run: cargo run --package _29_doublelinked
+      - run: cargo run --package _30_memory_leak
+      - run: cargo run --package _31_macro
       #- run: cargo run --package _
       #- run: cargo run --package _
       #- run: cargo run --package _

@@ -21,7 +21,7 @@ where
 {
     fn new(element: T) -> Rc<RefCell<Node<T>>> {
         Rc::new(RefCell::new(Node {
-            element: element,
+            element,
             next: None,
             prev: None,
         }))
@@ -70,8 +70,54 @@ where
         }
     }
 
+    fn remove_front(&mut self) {
+        if self.head.is_some() {
+            self.head
+                .take()
+                .map(|old| match old.borrow_mut().next.take() {
+                    Some(new_head) => {
+                        new_head.borrow_mut().prev.take();
+                        self.head = Some(new_head);
+                        self.head.clone()
+                    }
+                    None => {
+                        self.tail.take();
+                        None
+                    }
+                });
+        }
+    }
+
+    fn remove_back(&mut self) {
+        if self.tail.is_some() {
+            self.tail
+                .take()
+                .map(|old_tail| match old_tail.borrow_mut().prev.take() {
+                    Some(new_tail) => {
+                        new_tail.borrow_mut().next.take();
+                        self.tail = Some(new_tail);
+                        self.tail.clone()
+                    }
+                    None => {
+                        self.head.take();
+                        None
+                    }
+                });
+        }
+    }
+
     fn print(&self) {
         println!("pringlink linked list");
+        if self.head.is_none() {
+            println!("| ");
+        } else {
+            let mut traveler = self.head.clone();
+            while !traveler.is_none() {
+                print!("{} => ", traveler.as_ref().unwrap().borrow().element);
+                traveler = traveler.unwrap().borrow().next.clone();
+            }
+            println!(" | ");
+        }
 
         /*while true {
             let mut head = self.head.take();
@@ -96,4 +142,20 @@ fn main() {
     l.push_front(1);
     l.push_back(55);
     l.push_back(43);
+
+    l.print();
+
+    l.remove_front();
+    l.print();
+
+    l.remove_back();
+    l.print();
+    l.remove_front();
+    l.remove_front();
+    l.remove_back();
+    l.remove_front();
+    l.remove_back();
+    l.print();
+
+    //println!("list {:?}",l);
 }
