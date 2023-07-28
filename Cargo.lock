@@ -208,10 +208,23 @@ dependencies = [
 [[package]]
 name = "_30_memory_leak"
 version = "0.1.0"
+dependencies = [
+ "banner",
+]
 
 [[package]]
 name = "_31_macro"
 version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_32_capturetype"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
 
 [[package]]
 name = "banner"

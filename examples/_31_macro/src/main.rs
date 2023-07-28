@@ -1,3 +1,4 @@
+use banner::print_banner;
 macro_rules! ayyildiz {
     () => {
         1 + 1;
@@ -11,7 +12,7 @@ macro_rules! ayyildiz {
 }
 
 fn main() {
-    println!("Hello, world!");
+    print_banner();
 
     ayyildiz!();
 
@@ -21,5 +22,4 @@ fn main() {
     println!("multiple {}", ayyildiz!(1.2, 5.3, 3.4));
 
     ayyildiz![star];
-
 }

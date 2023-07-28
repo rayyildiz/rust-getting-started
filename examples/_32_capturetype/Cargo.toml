@@ -1,8 +1,7 @@
 [package]
-name = "_31_macro"
+name = "_32_capturetype"
 version.workspace = true
 edition.workspace = true
-
 
 [dependencies]
 banner = { path = "../banner"}

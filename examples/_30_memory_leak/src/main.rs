@@ -1,3 +1,4 @@
+use banner::print_banner;
 use std::cell::{Ref, RefCell};
 use std::rc::{Rc, Weak};
 
@@ -13,6 +14,8 @@ impl Drop for Node {
 }
 
 fn main() {
+    print_banner();
+
     let a = Rc::new(RefCell::new(Node { next: None }));
     println!(
         "a. count {}, week {}",
