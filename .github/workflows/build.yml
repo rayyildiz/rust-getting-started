@@ -63,9 +63,9 @@ jobs:
     - run: cargo run --package _30_memory_leak
     - run: cargo run --package _31_macro
     - run: echo "21.1" | cargo run --package _32_capturetype
-    #- run: cargo run --package _
-    #- run: cargo run --package _
-    #- run: cargo run --package _
+    - run: cargo run --package _33_unittype
+    - run: cargo run --package _34_asref
+    - run: cargo run --package _35_swap
     #- run: cargo run --package _
     #- run: cargo run --package _
     #- run: cargo run --package _

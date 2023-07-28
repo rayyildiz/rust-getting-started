@@ -227,5 +227,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "_33_unittype"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_34_asref"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_35_swap"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
 name = "banner"
 version = "0.1.0"
