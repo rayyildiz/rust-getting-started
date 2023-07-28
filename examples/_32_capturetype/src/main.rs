@@ -39,14 +39,12 @@ create_function!(f1, xy, i32, i32);
 fn main() {
     print_banner();
 
-    let s = str_macro!("a","b","c",);
-    println!("concat str1: {}",s);
-    println!("concat str2: {}",str_macro![]);
-    println!("concat str3: {}",str_macro!["a"]);
-    println!("concat str4: {}",str_macro!["a","b",]);
-    println!("concat str5: {}",str_macro!["a","b"]);
-
-
+    let s = str_macro!("a", "b", "c",);
+    println!("concat str1: {}", s);
+    println!("concat str2: {}", str_macro![]);
+    println!("concat str3: {}", str_macro!["a"]);
+    println!("concat str4: {}", str_macro!["a", "b",]);
+    println!("concat str5: {}", str_macro!["a", "b"]);
 
     println!("please enter a valid integer");
     let a = input!(f32);
