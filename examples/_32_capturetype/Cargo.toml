@@ -4,4 +4,4 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-banner = { path = "../banner"}
+banner = { path = "../../banner"}

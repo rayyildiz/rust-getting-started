@@ -3,7 +3,21 @@
 version = 3
 
 [[package]]
+name = "_01_anagram"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
 name = "_01_intro"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_02_popularity"
 version = "0.1.0"
 dependencies = [
  "banner",

@@ -68,7 +68,9 @@ jobs:
     - run: cargo run --package _35_swap
     - run: cargo run --package _36_questionmark
     - run: cargo run --package _37_testing
-    #- run: cargo run --package _
+
+    - run: cargo run --package _01_anagram
+    - run: cargo run --package _02_popularity
     #- run: cargo run --package _
     #- run: cargo run --package _
     #- run: cargo run --package _

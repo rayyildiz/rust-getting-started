@@ -1,9 +1,6 @@
-use banner::print_banner;
 use std::collections::HashMap;
 
 fn main() {
-    print_banner();
-
     let mut map: HashMap<&str, Person> = HashMap::new();
 
     map.insert(
