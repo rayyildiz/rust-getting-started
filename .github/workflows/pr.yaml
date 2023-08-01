@@ -56,7 +56,7 @@ jobs:
       - run: cargo run --package _33_unittype
       - run: cargo run --package _34_asref
       - run: cargo run --package _35_swap
-      #- run: cargo run --package _
+      - run: cargo run --package _36_questionmark
       #- run: cargo run --package _
       #- run: cargo run --package _
       #- run: cargo run --package _
