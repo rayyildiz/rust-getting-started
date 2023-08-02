@@ -71,9 +71,36 @@ jobs:
 
     - run: cargo run --package _01_anagram
     - run: cargo run --package _02_popularity
-    #- run: cargo run --package _
-    #- run: cargo run --package _
-    #- run: cargo run --package _
-    #- run: cargo run --package _
-    #- run: cargo run --package _
-    #- run: cargo run --package _
+    - run: cargo run --package _03_stockprice
+
+
+    - run: cargo run --package _01_associated
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package
+    #- run: cargo run --package

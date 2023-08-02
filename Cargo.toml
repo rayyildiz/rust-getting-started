@@ -16,7 +16,8 @@
 members = [
     "banner",
     "examples/*",
-    "problems/*"
+    "problems/*",
+    "advanced/*"
 ]
 
 [workspace.package]

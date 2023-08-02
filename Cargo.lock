@@ -10,6 +10,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "_01_associated"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
 name = "_01_intro"
 version = "0.1.0"
 dependencies = [
@@ -32,6 +39,13 @@ dependencies = [
 
 [[package]]
 name = "_03_compand"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_03_stockprice"
 version = "0.1.0"
 dependencies = [
  "banner",
