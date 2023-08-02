@@ -9,7 +9,7 @@ fn main() {
         print!("{one:?} ");
     }
 
-    println!("\nno take usage");
+    println!("\nnow take usage:");
 
     let infinite_loop = Take {
         remaining_count: 10,
