@@ -77,9 +77,9 @@ jobs:
 
     - run: cargo run --package _01_associated
     - run: cargo run --package _02_iterators
-    #- run: cargo run --package
-    #- run: cargo run --package
-    #- run: cargo run --package
+    - run: cargo run --package _03_dispatch
+    - run: cargo run --package _04_partial_order
+    - run: cargo run --package _05_struct_init
     #- run: cargo run --package
     #- run: cargo run --package
     #- run: cargo run --package

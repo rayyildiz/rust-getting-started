@@ -1,19 +1,20 @@
 use banner::print_banner;
+use rand::prelude::*;
 
 fn main() {
     print_banner();
 
-    let infinite_loops = Ones;
+    let infinite_loops = Numbers;
 
-    for one in infinite_loops.take(5) {
-        print!("{one:?} ");
+    for v in infinite_loops.take(5) {
+        print!("{v:?} ");
     }
 
     println!("\nnow take usage:");
 
     let infinite_loop = Take {
         remaining_count: 10,
-        inner: Ones,
+        inner: Numbers,
     };
 
     for v in infinite_loop {
@@ -21,13 +22,14 @@ fn main() {
     }
 }
 
-struct Ones;
+struct Numbers;
 
-impl Iterator for Ones {
-    type Item = i32;
+impl Iterator for Numbers {
+    type Item = u8;
 
     fn next(&mut self) -> Option<Self::Item> {
-        Some(1)
+        let r: u8 = random();
+        Some(r)
     }
 }
 
