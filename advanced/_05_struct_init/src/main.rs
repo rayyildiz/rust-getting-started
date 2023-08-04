@@ -17,6 +17,7 @@ fn main() {
     println!("init {p:?}");
 
     let p2 = Person::new("ab".to_string(), 1960).unwrap_or_default();
+
     println!("init or default {p2:?}");
 
     let c = Class {

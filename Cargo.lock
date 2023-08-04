@@ -95,6 +95,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "_06_consts"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
 name = "_06_functions"
 version = "0.1.0"
 dependencies = [
@@ -103,6 +110,20 @@ dependencies = [
 
 [[package]]
 name = "_07_ownership"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_07_thread"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
+name = "_08_channels"
 version = "0.1.0"
 dependencies = [
  "banner",
