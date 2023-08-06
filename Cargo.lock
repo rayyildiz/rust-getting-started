@@ -151,6 +151,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "_10_fibonacci"
+version = "0.1.0"
+dependencies = [
+ "banner",
+]
+
+[[package]]
 name = "_10_loop"
 version = "0.1.0"
 dependencies = [
