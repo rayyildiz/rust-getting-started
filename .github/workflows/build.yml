@@ -85,7 +85,7 @@ jobs:
     - run: cargo run --package _08_channels
     - run: cargo run --package _09_shared_state
     - run: cargo run --package _10_fibonacci
-    #- run: cargo run --package
+    - run: cargo run --package _11_actor
     #- run: cargo run --package
     #- run: cargo run --package
     #- run: cargo run --package
