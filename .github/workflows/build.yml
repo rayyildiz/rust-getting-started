@@ -83,7 +83,7 @@ jobs:
     - run: cargo run --package _06_consts
     - run: cargo run --package _07_thread
     - run: cargo run --package _08_channels
-    #- run: cargo run --package
+    - run: cargo run --package _09_concurrency
     #- run: cargo run --package
     #- run: cargo run --package
     #- run: cargo run --package
