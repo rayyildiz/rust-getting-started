@@ -84,17 +84,12 @@ jobs:
     - run: cargo run --package _07_thread
     - run: cargo run --package _08_channels
     - run: cargo run --package _09_concurrency
-    #- run: cargo run --package
-    #- run: cargo run --package
-    #- run: cargo run --package
-    #- run: cargo run --package
-    #- run: cargo run --package
     - run: cargo run --package _09_shared_state
     - run: cargo run --package _10_fibonacci
     - run: cargo run --package _11_actor
     - run: cargo run --package _12_stack
     - run: cargo bench --package _13_bench
-    #- run: cargo run --package
+    - run: cargo run --package _14_channel
     #- run: cargo run --package
     #- run: cargo run --package
     #- run: cargo run --package
