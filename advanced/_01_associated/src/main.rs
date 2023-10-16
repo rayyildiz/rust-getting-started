@@ -12,6 +12,10 @@ fn main() {
     let mp = mph.distance_in_three_hours();
 
     println!("Mph : {:?} ", mp);
+
+    let a = find_sample();
+    let b = a.distance_in_three_hours();
+    println!("b {:?}", b);
 }
 
 #[derive(Debug)]
@@ -51,13 +55,27 @@ impl DistanceInThreeHours for Kmh {
 }
 
 impl DistanceInThreeHours for Mph {
-    type Distance = Mp;
+    type Distance = Mph;
 
     fn distance_in_three_hours(&self) -> Self::Distance {
         Self::Distance {
             value: self.value * 3,
         }
     }
+}
+
+struct Milli(u16);
+
+impl DistanceInThreeHours for Milli {
+    type Distance = i32;
+
+    fn distance_in_three_hours(&self) -> Self::Distance {
+        self.0 as i32 + 10
+    }
+}
+
+fn find_sample() -> impl DistanceInThreeHours<Distance = i32> {
+    Milli(10)
 }
 
 /*

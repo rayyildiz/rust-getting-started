@@ -17,7 +17,7 @@ fn main() {
 
     let mut v2 = vec![5, 8, 9, 7];
 
-    v2 = recieving_giving_back_ownership(v2);
+    v2 = receiving_giving_back_ownership(v2);
 
     let mut numbers = vec![1, 2, 3];
 
@@ -28,7 +28,7 @@ fn main() {
     println!("Slice: {:?}", slice);
 }
 
-fn recieving_giving_back_ownership(vec1: Vec<i32>) -> Vec<i32> {
+fn receiving_giving_back_ownership(vec1: Vec<i32>) -> Vec<i32> {
     vec1
 }
 

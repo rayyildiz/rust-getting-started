@@ -1,0 +1,11 @@
+[package]
+name = "_11_actor"
+version.workspace = true
+edition.workspace = true
+
+
+[dependencies]
+banner = {path = "../../banner"}
+actix = {version = "0.13"}
+actix-rt = {version = "2.8"}
+rand = {version = "0.8"}

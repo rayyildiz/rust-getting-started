@@ -1,5 +1,4 @@
 use banner::print_banner;
-use std::env::var;
 
 fn main() {
     print_banner();
