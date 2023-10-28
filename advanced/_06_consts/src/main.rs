@@ -29,9 +29,9 @@ fn main() {
 }
 
 #[derive(Debug, Clone)]
-pub struct final_config<T>(T);
+pub struct FinalConfig<T>(T);
 
-impl<T> Deref for final_config<T> {
+impl<T> Deref for FinalConfig<T> {
     type Target = T;
 
     fn deref(&self) -> &Self::Target {
@@ -39,7 +39,7 @@ impl<T> Deref for final_config<T> {
     }
 }
 
-impl<T> Copy for final_config<T> where T: Copy {}
+impl<T> Copy for FinalConfig<T> where T: Copy {}
 
 #[derive(Debug)]
 struct Configuration {
@@ -55,7 +55,7 @@ impl Configuration {
         }
     }
 
-    fn build(self) -> final_config<Configuration> {
-        final_config(self)
+    fn build(self) -> FinalConfig<Configuration> {
+        FinalConfig(self)
     }
 }

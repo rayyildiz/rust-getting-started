@@ -13,6 +13,7 @@
 #publish = false
 
 [workspace]
+resolver = "2"
 members = [
     "banner",
     "examples/*",
