@@ -17,6 +17,22 @@ fn main() {
     println!("equals : {}", p == p2);
     println!("greater than : {}", p > p2);
     println!("less than : {}", p < p2);
+
+    let input = Some(3);
+    if let Some(num) = input {
+        println!("{num} value has to be 3");
+    }
+}
+
+fn main2() {
+    let number = String::from("32");
+    println!("main : {number}");
+    foo(number);
+    //println!("main: {number}");
+}
+
+fn foo(a: String) {
+    println!("foo: {a}");
 }
 
 #[derive(Debug)]
