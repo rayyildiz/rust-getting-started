@@ -30,4 +30,13 @@ fn main() {
     x1 = x1 * 3;
     x2 = x1 - 2;
     println!("My age is {} and my son age is {}", x1, x2);
+
+    let name = String::from("Ramazan");
+    println!("name : {}", name);
+    foo(name);
+    // println!("name : {}",name);
+}
+
+fn foo(s: String) {
+    println!("hello  {s}");
 }
