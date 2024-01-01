@@ -1,4 +1,14 @@
 use banner::print_banner;
+use std::ops::Deref;
+
+struct ScopeCall<F: FnMut()> {
+    c: F,
+}
+impl<F: FnMut()> Drop for ScopeCall<F> {
+    fn drop(&mut self) {
+        (self.c)();
+    }
+}
 
 fn main() {
     print_banner();
@@ -32,4 +42,34 @@ fn main() {
         "subset_array size in mem: {}",
         std::mem::size_of_val(subset_array)
     );
+
+    test_defer();
+}
+
+macro_rules! expr {
+    ($e: expr) => {
+        $e
+    };
+}
+macro_rules! defer {
+    ($($data: tt)*) => (
+        let _scope_call = ScopeCall {
+            c: || -> () { expr!({ $($data)* }) }
+        };
+    )
+}
+
+fn test_defer() {
+    defer! {
+        let a = 3;
+    };
+}
+
+struct A;
+impl Deref for A {
+    type Target = bool;
+
+    fn deref(&self) -> &Self::Target {
+        todo!()
+    }
 }

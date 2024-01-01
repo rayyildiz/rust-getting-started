@@ -3,7 +3,7 @@ use banner::print_banner;
 fn main() {
     print_banner();
 
-    let mut x: f32 = 32.0;
+    let mut x = 32.0_f32;
 
     println!(" x value {}", x);
 
@@ -34,7 +34,7 @@ fn main() {
     let name = String::from("Ramazan");
     println!("name : {}", name);
     foo(name);
-    // println!("name : {}",name);
+    //println!("name : {}",name);
 }
 
 fn foo(s: String) {
