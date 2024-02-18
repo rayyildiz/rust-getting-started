@@ -44,6 +44,16 @@ fn main() {
     );
 
     test_defer();
+
+    let records = (1..).map(|i| Foo { no: i });
+    for f in records.take(10_usize) {
+        println!("f: {:?}", f);
+    }
+}
+
+#[derive(Debug)]
+struct Foo {
+    no: i32,
 }
 
 macro_rules! expr {
