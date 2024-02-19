@@ -91,7 +91,7 @@ jobs:
     - run: cargo bench --package _13_bench
     - run: cargo run --package _14_channel
     - run: cargo run --package _15_channel_2
-    - run: cargo run --package _17_actor
+    - run: cargo run --package _18_actor
     #- run: cargo run --package
     #- run: cargo run --package
     #- run: cargo run --package

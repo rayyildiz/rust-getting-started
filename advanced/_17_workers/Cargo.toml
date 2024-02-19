@@ -1,11 +1,9 @@
 [package]
-name = "_15_notify"
+name = "_17_workers"
 version.workspace = true
 edition.workspace = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-banner = {path = "../../banner"}
-notify = { version = "6.1" }
-home = { version = "0.5" }
+banner = { path = "../../banner" }

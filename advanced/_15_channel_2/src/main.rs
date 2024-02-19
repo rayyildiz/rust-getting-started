@@ -16,7 +16,6 @@ fn main() {
 
     let mut sum = 0;
     for a in rx {
-        // println!("get data {a}")
         sum += a;
     }
     let diff = Instant::elapsed(&start);

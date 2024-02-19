@@ -1,6 +1,12 @@
-use banner::print_banner;
+use std::thread::sleep;
+use std::time::Duration;
 use std::time::Instant;
+
 use tokio::sync::mpsc;
+
+use spinners::{Spinner, Spinners};
+
+use banner::print_banner;
 
 #[tokio::main]
 async fn main() {
@@ -27,4 +33,8 @@ async fn main() {
 
     let duration = start.elapsed();
     println!("elapsed {:?}", duration);
+
+    let mut sp = Spinner::new(Spinners::Dots9, "Waiting for 3 seconds".into());
+    sleep(Duration::from_secs(3));
+    sp.stop();
 }
