@@ -1,0 +1,7 @@
+[package]
+name = "_20_phantom"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+banner = {path = "../../banner"}
