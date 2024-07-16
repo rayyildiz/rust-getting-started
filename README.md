@@ -9,7 +9,7 @@ provides a hands-on approach to learning new concepts and applying them via prac
 
 The project is structured into several directories, each focusing on a different area of Rust:
 
-- [`examples`](./examples): This directory contains files demonstrating basic Rust features.
+- [`basics`](./basics): This directory contains files demonstrating basic Rust features.
 - [`problems`](./problems): In this directory, you will find coding problems solved exclusively in Rust. It provides
   some examples to understand how Rust can handle real-world programming challenges.
 - [`advanced`](./advanced): This directory dives deeper into Rust by exploring advanced concepts
