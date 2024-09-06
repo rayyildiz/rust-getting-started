@@ -1,13 +1,10 @@
-use tokio::time::{sleep, Duration};
+use std::time::Duration;
 
-// Simulate a network request
 async fn fetch_data(url: &str) -> Result<String, &'static str> {
     println!("Fetching data from: {}", url);
 
-    // business logic
+    tokio::time::sleep(Duration::from_secs(2)).await;
 
-    // In a real application, you would make an actual network request here
-    // For the sake of this example, we'll just return a fixed response
     Ok(String::from(r#"{"name":"rayyildiz","bio":"just for fun"}"#))
 }
 
