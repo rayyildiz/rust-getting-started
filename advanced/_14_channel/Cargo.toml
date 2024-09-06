@@ -8,6 +8,6 @@ edition.workspace = true
 [dependencies]
 banner = { path = "../../banner" }
 tokio = { workspace = true, features = ["rt", "macros", "rt-multi-thread", "sync"] }
-spinach = "2"
+spinach = "3"
 spinners = "4"
 

@@ -6,8 +6,10 @@ fn main() {
     print_banner();
 
     let cb = CircuitBreaker::new();
+    println!("is is closed ? {}", cb.accept_request());
     let open_cb = cb.open();
-    open_cb.close();
+    let closed = open_cb.close();
+    println!("is is closed again ? {}", closed.accept_request());
 }
 
 struct Closed;
@@ -23,7 +25,7 @@ impl CircuitBreaker {
     fn new() -> Self {
         Self {
             token: 0,
-            status: PhantomData::default(),
+            status: PhantomData,
         }
     }
 }
